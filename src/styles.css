@@ -1,5 +1,15 @@
 *,*::before,*::after{box-sizing:border-box}
 
+/* --- FONTS --- */
+/* Commercial font, file dropped in public/fonts. Each src is tried in order. */
+@font-face{
+  font-family:"TAN Kulture";
+  src:url("/fonts/TAN-Kulture.woff2") format("woff2"),url("/fonts/TAN-Kulture.otf") format("opentype"),url("/fonts/TAN-Kulture.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
 /* --- TOKENS --- */
 :root{
   --color-bg:#000;
@@ -18,8 +28,9 @@
   --glass-border-hover:rgba(255,255,255,.4);
   --glass-shadow:0 30px 60px rgba(0,0,0,.35);
   --glass-blur:blur(64px) saturate(1.2);
-  --font-serif:"Instrument Serif",Georgia,serif;
-  --font-sans:"Manrope",ui-sans-serif,system-ui,sans-serif;
+  /* Whole site uses TAN Kulture; the old pair stays as fallback while it loads */
+  --font-serif:"TAN Kulture","Instrument Serif",Georgia,serif;
+  --font-sans:"TAN Kulture","Manrope",ui-sans-serif,system-ui,sans-serif;
   --ease-out:cubic-bezier(.16,1,.3,1);
   --gutter:clamp(24px,3vw,48px);
   --focus-ring:0 0 0 2px var(--color-bg),0 0 0 4px var(--color-accent-text);
