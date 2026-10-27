@@ -1,11 +1,11 @@
 *,*::before,*::after{box-sizing:border-box}
 
 /* --- FONTS --- */
-/* Estrella (befonts.com, commercial use allowed). It has letters and accents only:
-   digits and punctuation fall back per character to the next font in the stack. */
+/* Foun Free (befonts.com, personal use only). No accented letters or most punctuation:
+   those characters fall back per character to the next font in the stack. */
 @font-face{
-  font-family:"Estrella";
-  src:url("/fonts/Estrella.woff2") format("woff2");
+  font-family:"Foun";
+  src:url("/fonts/Foun.woff2") format("woff2");
   font-weight:400;
   font-style:normal;
   font-display:swap;
@@ -29,9 +29,9 @@
   --glass-border-hover:rgba(255,255,255,.4);
   --glass-shadow:0 30px 60px rgba(0,0,0,.35);
   --glass-blur:blur(64px) saturate(1.2);
-  /* Whole site uses Estrella; the old pair stays as fallback while it loads */
-  --font-serif:"Estrella","Instrument Serif",Georgia,serif;
-  --font-sans:"Estrella","Manrope",ui-sans-serif,system-ui,sans-serif;
+  /* Whole site uses Foun; the old pair stays as fallback while it loads */
+  --font-serif:"Foun","Instrument Serif",Georgia,serif;
+  --font-sans:"Foun","Manrope",ui-sans-serif,system-ui,sans-serif;
   --ease-out:cubic-bezier(.16,1,.3,1);
   --gutter:clamp(24px,3vw,48px);
   --focus-ring:0 0 0 2px var(--color-bg),0 0 0 4px var(--color-accent-text);
